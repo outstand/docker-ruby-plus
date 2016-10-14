@@ -1,8 +1,7 @@
 FROM outstand/ruby-base:2.1.10
 MAINTAINER Ryan Schlesinger <ryan@outstand.com>
 
-# tmux 2.2's utf-8 support is _interesting_ in the current docker terminal code
-ENV TMUX_VERSION 2.1
+ENV TMUX_VERSION 2.3
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     nodejs \
