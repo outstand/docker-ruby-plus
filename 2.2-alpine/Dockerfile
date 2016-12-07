@@ -1,4 +1,4 @@
-FROM outstand/ruby-base:2.2.5-alpine
+FROM outstand/ruby-base:2.2.6-alpine
 MAINTAINER Ryan Schlesinger <ryan@outstand.com>
 
 ENV TMUX_VERSION 2.3
