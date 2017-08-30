@@ -1,7 +1,7 @@
 FROM outstand/ruby-base:2.4.1
 MAINTAINER Ryan Schlesinger <ryan@outstand.com>
 
-ENV TMUX_VERSION 2.3
+ENV TMUX_VERSION 2.5
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     nodejs \
