@@ -1,5 +1,7 @@
+FROM outstand/yarn as yarn
+
 FROM outstand/ruby-base:2.4.4
-MAINTAINER Ryan Schlesinger <ryan@outstand.com>
+LABEL maintainer="Ryan Schlesinger <ryan@outstand.com>"
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get install -y --no-install-recommends \
@@ -7,3 +9,5 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
       libicu-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+COPY --from=yarn /bin/yarn /bin/
