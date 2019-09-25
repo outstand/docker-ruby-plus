@@ -1,6 +1,6 @@
 FROM outstand/yarn as yarn
 
-FROM outstand/ruby-base:2.4.6
+FROM outstand/ruby-base:2.4.7
 LABEL maintainer="Ryan Schlesinger <ryan@outstand.com>"
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
