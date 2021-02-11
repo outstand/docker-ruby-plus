@@ -1,9 +1,9 @@
 FROM outstand/yarn as yarn
 
-FROM outstand/ruby-base:3.0.0-preview2
+FROM outstand/ruby-base:3.0.0
 LABEL maintainer="Ryan Schlesinger <ryan@outstand.com>"
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y --no-install-recommends \
       nodejs \
       libicu-dev \
