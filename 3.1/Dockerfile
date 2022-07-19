@@ -1,8 +1,5 @@
-FROM outstand/ruby-base:2.7.6
+FROM outstand/ruby-base:3.1.2
 LABEL maintainer="Ryan Schlesinger <ryan@outstand.com>"
-
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-ENV DEBIAN_FRONTEND=noninteractive
 
 RUN set -eux; \
       \
