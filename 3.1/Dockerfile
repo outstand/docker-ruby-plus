@@ -10,6 +10,7 @@ RUN set -eux; \
         nodejs \
         yarn \
         libicu-dev \
+        neovim \
       ; \
       apt-get clean; \
       rm -rf /var/lib/apt/lists/*
